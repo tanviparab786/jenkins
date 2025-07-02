@@ -8,7 +8,7 @@ pipeline{
         }
         stage('deploying the code'){
             steps{
-                sh ' mv /var/lib/jenkins/workspace/frontend-pipeline/ /var/www/html/'
+                sh ' mv /var/lib/jenkins/workspace/frontend-pipeline/* /var/www/html/'
             }
         }
     }
