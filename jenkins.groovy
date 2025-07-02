@@ -8,7 +8,9 @@ pipeline{
         }
         stage('deploying the code'){
             steps{
+                sh 'whoami'
                 sh ' mv /var/lib/jenkins/workspace/frontend-pipeline/* /var/www/html/'
+
             }
         }
     }
