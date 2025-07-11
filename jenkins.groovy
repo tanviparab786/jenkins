@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('pulling code from repository'){
             steps{
-                git branch: 'main', url: 'https://github.com/tanviparab786/jenkins.git'
+                git branch: 'main', url: 'https://github.com/tanviparab786/CALYX.git'
             }
         }
         stage('deploying the code'){
