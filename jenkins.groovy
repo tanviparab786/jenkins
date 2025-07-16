@@ -9,7 +9,7 @@ pipeline{
         stage('deploying the code'){
             steps{
                 sh 'whoami'
-                sh 'rm /var/www/html/CALYX/CALYX/* '
+                sh 'sudo rm /var/www/html/CALYX/CALYX/* '
                 sh 'sudo mv /var/lib/jenkins/workspace/frontend-pipeline/* /var/www/html/CALYX/CALYX'
 
             }
